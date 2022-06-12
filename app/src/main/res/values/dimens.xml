@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_0_dp">0dp</dimen>
+    <dimen name="dimen_3_dp">3dp</dimen>
+    <dimen name="dimen_5_dp">5dp</dimen>
+    <dimen name="dimen_10_dp">10dp</dimen>
+    <dimen name="dimen_15_dp">15dp</dimen>
+    <dimen name="dimen_24_dp">24dp</dimen>
+    <dimen name="dimen_25_dp">25dp</dimen>
+    <dimen name="dimen_36_dp">36dp</dimen>
+    <dimen name="dimen_100_dp">100dp</dimen>
+    <dimen name="dimen_40_dp">40dp</dimen>
+    <dimen name="dimen_50_dp">50dp</dimen>
+    <dimen name="dimen_300_dp">300dp</dimen>
+    <dimen name="screen_padding">10dp</dimen>
+    <dimen name="headling_24_sp">24sp</dimen>
+    <dimen name="headling_20_sp">20sp</dimen>
+    <dimen name="headling_11_sp">11sp</dimen>
+    <dimen name="dimen_60_dp">60dp</dimen>
+    <dimen name="headling_18_sp">18sp</dimen>
+    <dimen name="headling_16_sp">16sp</dimen>
+    <dimen name="dimen_600_dp">600dp</dimen>
+
+    <dimen name="splash_screen_icon_width">200dp</dimen>
+    <dimen name="splash_screen_icon_height">200dp</dimen>
+    <item name="splash_screen_text_bottom_anchor_in_percentage" type="integer" format="float">0.75</item>
+
+    <dimen name="scanner_zxing_framing_width">300dp</dimen>
+    <dimen name="scanner_zxing_framing_height">200dp</dimen>
+    <dimen name="scanner_default_margin">10dp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_30sp">30sp</dimen>
+    <dimen name="dimen_0.5_dp">0.5dp</dimen>
+    <dimen name="dimen_1_dp">1dp</dimen>
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <item name="scanner_barcode_preview_height_in_percentage" type="integer" format="float">0.66</item>
+    <item name="scanner_product_preview_width_in_percentage" type="integer" format="float">0.3</item>
+
+    <dimen name="home_screen_loyalty_card_item_height">200dp</dimen>
+    <dimen name="home_screen_promotions_item_height">100dp</dimen>
+    <dimen name="home_screen_promotions_item_width">110dp</dimen>
+</resources>

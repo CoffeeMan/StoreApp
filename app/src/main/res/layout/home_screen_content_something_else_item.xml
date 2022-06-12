@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5_dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_screen_item_background">
+
+    <ImageView
+        android:id="@+id/promotionsPreviewImageView"
+        android:layout_width="@dimen/home_screen_promotions_item_width"
+        android:layout_height="@dimen/home_screen_promotions_item_height"
+        android:scaleType="centerInside"
+        tools:src="@drawable/ic_product_preview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/promotionsTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/promotionsTextView"
+        android:layout_width="@dimen/dimen_0_dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/headling_11_sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/dimen_5_dp"
+        tools:text="Promotions title"
+        app:layout_constraintTop_toBottomOf="@id/promotionsPreviewImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

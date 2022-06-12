@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/productScrollView"
+        android:layout_width="@dimen/dimen_0_dp"
+        android:layout_height="@dimen/dimen_0_dp"
+        android:layout_marginBottom="@dimen/dimen_10_dp"
+        app:layout_constraintBottom_toTopOf="@id/fragmentProductBarrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fragmentProductImage"
+                android:layout_width="@dimen/dimen_0_dp"
+                android:layout_height="@dimen/dimen_0_dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/screen_padding" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/screen_padding" />
+
+            <TextView
+                android:id="@+id/fragmentProductName"
+                android:layout_width="@dimen/dimen_0_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20_dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/headling_24_sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineBegin"
+                app:layout_constraintTop_toBottomOf="@id/fragmentProductImage"
+                tools:text="Сметана (Название Фирмы) 20% 300г, и еще немного текста" />
+
+            <TextView
+                android:id="@+id/fragmentProductPriceWithDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20_dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guidelineBegin"
+                app:layout_constraintTop_toBottomOf="@id/fragmentProductName"
+                tools:text="99,90 ₽" />
+
+            <TextView
+                android:id="@+id/fragmentProductPriceWithoutDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10_dp"
+                android:foreground="@drawable/bg_strikethrough"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#959595"
+                android:textSize="@dimen/dimen_14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/fragmentProductPriceWithDiscount"
+                app:layout_constraintStart_toEndOf="@id/fragmentProductPriceWithDiscount"
+                app:layout_constraintTop_toTopOf="@id/fragmentProductPriceWithDiscount"
+                tools:text="100,00 ₽" />
+
+            <TextView
+                android:id="@+id/fragmentProductUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/dimen_18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/fragmentProductPriceWithDiscount"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toTopOf="@id/fragmentProductPriceWithDiscount"
+                tools:text="за 1 шт." />
+
+            <TextView
+                android:id="@+id/fragmentProductDescription"
+                android:layout_width="@dimen/dimen_0_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20_dp"
+                android:layout_marginBottom="@dimen/dimen_10_dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/headling_16_sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@id/guidelineBegin"
+                app:layout_constraintTop_toBottomOf="@id/fragmentProductPriceWithDiscount"
+                tools:text="Качественная сметана...." />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/fragmentProductBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="fragmentProductQuantityInCartTv" />
+
+    <TextView
+        android:id="@+id/fragmentProductQuantityInCartTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/fragmentProductQuantityTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Сейчас в корзине 700 г." />
+
+    <ImageButton
+        android:id="@+id/fragmentProductMinusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/dimen_2dp"
+        android:layout_marginEnd="@dimen/dimen_5_dp"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentProductQuantityTv"
+        app:layout_constraintEnd_toStartOf="@id/fragmentProductQuantityTv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fragmentProductQuantityTv"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/fragmentProductQuantityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/dimen_10_dp"
+        android:layout_marginEnd="@dimen/dimen_5_dp"
+        app:layout_constraintBottom_toTopOf="@id/fragmentProductAddToCartBtn"
+        app:layout_constraintEnd_toStartOf="@id/fragmentProductPlusBtn"
+        app:layout_constraintStart_toEndOf="@id/fragmentProductMinusBtn"
+        tools:text="300 г." />
+
+    <ImageButton
+        android:id="@+id/fragmentProductPlusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/dimen_2dp"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentProductQuantityTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragmentProductQuantityTv"
+        app:layout_constraintTop_toTopOf="@id/fragmentProductQuantityTv"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        app:tint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragmentProductAddToCartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:text="@string/product_add_to_cart_btn_text"
+        android:textAllCaps="false"
+        android:insetTop="@dimen/dimen_0_dp"
+        android:insetBottom="@dimen/dimen_0_dp"
+        android:drawableLeft="@drawable/ic_baseline_add_shopping_cart_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.cart.CartFragment"
+        android:label="CartFragment">
+        <action
+            android:id="@+id/action_cartFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.catalog.CatalogFragment"
+        android:label="CatalogFragment">
+        <action
+            android:id="@+id/action_catalogFragment_to_productsFragment"
+            app:destination="@id/productsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.catalog.ProductsListFragment"
+        android:label="ProductsFragment">
+        <action
+            android:id="@+id/action_productsFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loyaltyCardItemFragment"
+            app:destination="@id/loyaltyCardItemFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_promotionItemFragment"
+            app:destination="@id/promotionItemFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newsItemFragment"
+            app:destination="@id/newsItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.scan.ScanFragment"
+        android:label="ScanFragment">
+        <action
+            android:id="@+id/action_scanFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storesFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.stores.StoresFragment"
+        android:label="StoresFragment">
+        <action
+            android:id="@+id/action_storesFragment_to_storeFragment"
+            app:destination="@id/storeDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.auth.sign_in.SignInFragment"
+        android:label="SignInFragment">
+        <action
+            android:id="@+id/action_signInFragment_to_restorePasswordFragment"
+            app:destination="@id/restorePasswordFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.onboarding.OnboardingFragment"
+        android:label="OnboardingFragment">
+        <action
+            android:id="@+id/action_onboardingFragment_to_startAuthFragment"
+            app:destination="@id/startAuthFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.product.ProductFragment"
+        android:label="ProductFragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.auth.sign_up.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/restorePasswordFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.auth.restore_password.RestorePasswordFragment"
+        android:label="RestorePasswordFragment">
+        <action
+            android:id="@+id/action_restorePasswordFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.splash.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_startAuthFragment"
+            app:destination="@id/startAuthFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/startAuthFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.auth.start_auth.StartAuthFragment"
+        android:label="StartAuthFragment">
+        <action
+            android:id="@+id/action_startAuthFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_startAuthFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.profile.ProfileFragment"
+        android:label="ProfileFragment">
+        <action
+            android:id="@+id/action_profileFragment_to_startAuthFragment"
+            app:destination="@id/startAuthFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditFragment"
+            app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileDialogFragment"
+            app:destination="@id/profileDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/storeDialogFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.stores.store.StoreDialogFragment"
+        android:label="dialog_fragment_store" >
+    </dialog>
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.profile.profile_edit.ProfileEditFragment"
+        android:label="ProfileEditFragment" >
+    </fragment>
+    <dialog
+        android:id="@+id/profileDialogFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.profile.profile_dialog_fragment.ProfileDialogFragment"
+        android:label="ProfileDialogFragment" />
+    <fragment
+        android:id="@+id/loyaltyCardItemFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.home.LoyaltyCardItemFragment"
+        android:label="LoyaltyCardItemFragment" />
+    <fragment
+        android:id="@+id/promotionItemFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.home.PromotionItemFragment"
+        android:label="PromotionItemFragment" />
+    <fragment
+        android:id="@+id/newsItemFragment"
+        android:name="com.epam.grocerystoreapp.presentation.screens.home.NewsItemFragment"
+        android:label="NewsItemFragment" />
+</navigation>

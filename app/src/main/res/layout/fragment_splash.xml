@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="@dimen/splash_screen_icon_width"
+        android:layout_height="@dimen/splash_screen_icon_height"
+        android:src="@drawable/gif_splash_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/progressBottomGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@integer/splash_screen_text_bottom_anchor_in_percentage"/>
+
+    <TextView
+        android:id="@+id/splashScreenWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/headling_24_sp"
+        android:textStyle="bold"
+        android:text="@string/splash_screen_welcome_text"
+        app:layout_constraintBottom_toTopOf="@id/progressBottomGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

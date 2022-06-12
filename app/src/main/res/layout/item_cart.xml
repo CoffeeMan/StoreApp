@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/itemCartPhoto"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:padding="@dimen/dimen_5_dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="@dimen/dimen_1_dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageButton
+        android:id="@+id/itemCartDeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemCartNameTv"
+        app:srcCompat="@drawable/ic_outline_delete_24"
+        app:tint="@color/red" />
+
+    <TextView
+        android:id="@+id/itemCartNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/itemCartDeleteBtn"
+        app:layout_constraintStart_toEndOf="@+id/itemCartPhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Хлеб ржаной 500 г и еще " />
+
+    <TextView
+        android:id="@+id/itemCartUnitTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#959595"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/itemCartNameTv"
+        app:layout_constraintTop_toBottomOf="@id/itemCartPriceWithDiscountTv"
+        app:layout_constraintVertical_bias="0"
+        tools:text="за 1 шт." />
+
+    <TextView
+        android:id="@+id/itemCartPriceWithDiscountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        app:layout_constraintStart_toStartOf="@+id/itemCartNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/itemCartNameTv"
+        tools:text="99,90 ₽" />
+
+    <TextView
+        android:id="@+id/itemCartPriceWithoutDiscountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/bg_strikethrough"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#959595"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/dimen_10_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemCartPriceWithDiscountTv"
+        app:layout_constraintStart_toEndOf="@+id/itemCartPriceWithDiscountTv"
+        app:layout_constraintTop_toTopOf="@+id/itemCartPriceWithDiscountTv"
+        tools:text="100,00 ₽" />
+
+    <ImageButton
+        android:id="@+id/itemCartMinusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/dimen_2dp"
+        android:layout_marginEnd="@dimen/dimen_5_dp"
+        app:layout_constraintBottom_toBottomOf="@id/itemCartQuantityTv"
+        app:layout_constraintEnd_toStartOf="@id/itemCartQuantityTv"
+        app:layout_constraintTop_toTopOf="@id/itemCartQuantityTv"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/itemCartQuantityTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="@dimen/dimen_14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/dimen_5_dp"
+        app:layout_constraintBottom_toBottomOf="@id/itemCartPlusBtn"
+        app:layout_constraintEnd_toStartOf="@id/itemCartPlusBtn"
+        app:layout_constraintTop_toTopOf="@id/itemCartPlusBtn"
+        tools:text="300 г." />
+
+    <ImageButton
+        android:id="@+id/itemCartPlusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="@dimen/dimen_2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        app:tint="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

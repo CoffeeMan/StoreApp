@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding">
+
+    <ImageButton
+        android:id="@+id/dialogFragmentProfileCloseButton"
+        android:layout_width="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogFragmentProfileTitle"
+        android:layout_width="@dimen/dimen_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_20_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/headling_24_sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dialogFragmentProfileCloseButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="О приложении" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/dialogFragmentProfileBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="dialogFragmentProfileCloseButton,dialogFragmentProfileTitle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogFragmentProfileBarrier">
+
+        <TextView
+            android:id="@+id/dialogFragmentProfileDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/headling_16_sp"
+            tools:text="Наше приложение..." />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

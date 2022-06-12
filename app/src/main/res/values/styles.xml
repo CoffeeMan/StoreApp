@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AuthButton">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="ProfileButton">
+        <item name="android:insetTop">@dimen/dimen_0_dp</item>
+        <item name="android:insetBottom">@dimen/dimen_0_dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="cornerRadius">@dimen/dimen_0_dp</item>
+        <item name="android:drawableTint">@color/black</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+</resources>

@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">Grocery Store App</string>
+
+    <string name="home_frag_title">Главная</string>
+    <string name="stores_frag_title">Магазины</string>
+    <string name="scan_frag_title">Сканировать</string>
+    <string name="catalog_frag_title">Каталог</string>
+    <string name="cart_frag_title">Корзина</string>
+    <string name="unknown_city">Unknown city</string>
+
+    <string name="search_hint">Поиск</string>
+    <string name="textViewShopsText">Поиск</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_query">Запрос местоположения</string>
+    <string name="location_query_info">Информация о местоположении необходима для правильной работы приложения. Пожалуйста, предоставьте все необходимые разрешения</string>
+    <string name="deniedMessageShops">Без данного разрешения вы не получите доступ к своему местоположению</string>
+
+    <string name="ok">OK</string>
+
+
+    <string name="sign_up_hint_name">Выберите имя</string>
+    <string name="sign_up_hint_surname">Выберите фамилию</string>
+    <string name="sign_up_hint_restore_password">Восстановить пароль</string>
+
+    <string name="restore_password_hint_check_mail">Письмо с инструкциями для восстановления пароля отправлено на указанную почту</string>
+    <string name="restore_password_error_email_not_found">Введенный e-mail не найден</string>
+
+    <string name="auth_hint_invalid_name">Введено некорректное имя</string>
+    <string name="auth_hint_invalid_surname">Введена некорректная фамилия</string>
+    <string name="auth_hint_invalid_date_of_birth">Не выбрана дата рождения</string>
+    <string name="auth_hint_invalid_email">Введен некорректный e-mail</string>
+    <string name="auth_hint_invalid_password">Введен некорректный пароль</string>
+    <string name="auth_hint_passwords_not_match">Введенные пароли не совпадают</string>
+    <string name="auth_hint_email_exists">Введенный e-mail уже существует</string>
+    <string name="hint_no_internet_connection">Отсутствует интернет-соединение</string>
+    <string name="auth_hint_sign_up_successful">Регистрация выполнена успешно</string>
+    <string name="auth_hint_sign_up_unsuccessful">Регистрация не завершена. Проверьте заполненные поля.</string>
+    <string name="auth_hint_sign_out_unsuccessful">Ошибка: выход не выполнен.</string>
+    <string name="auth_hint_get_user_unsuccessful">Ошибка: данные пользователя не получены.</string>
+    <string name="auth_hint_wrong_email_or_password">Введен неверный E-mail или пароль</string>
+    <string name="auth_hint_email_did_not_found">Введенный E-mail не найден</string>
+    <string name="auth_name_edit_text_hint">Введите имя</string>
+    <string name="auth_surname_edit_text_hint">Введите фамилию</string>
+    <string name="auth_date_of_birth_edit_text_hint">Выберите дату рождения</string>
+    <string name="auth_email_edit_text_hint">Введите E-mail</string>
+    <string name="auth_password_edit_text_hint">Введите пароль</string>
+    <string name="auth_repeat_password_edit_text_hint">Повторите пароль</string>
+    <string name="auth_forgot_password_btn_text">Забыли пароль?</string>
+    <string name="auth_sign_in_btn_text">Войти</string>
+    <string name="auth_sign_up_btn_text">Зерегистрироваться</string>
+    <string name="auth_restore_password_btn_text">Восстановить пароль</string>
+    <string name="profile_logout_btn_text">Выйти</string>
+    <string name="splash_screen_welcome_text">Добро пожаловать, Друг!</string>
+    <string name="onboarding_first_screen_title">1. Выберите товар</string>
+    <string name="onboarding_first_screen_description">Все что Вам нужно - подойти к прилавку и выбрать желаемый товар</string>
+    <string name="onboarding_second_screen_title">2. Отсканируйте товар</string>
+    <string name="onboarding_second_screen_description">Найдите на упаковке товара штрихкод и отсканируйте его.</string>
+    <string name="onboarding_third_screen_title">3. Оплатите товар</string>
+    <string name="onboarding_third_screen_description">Оплатите товар, сгенерировав штрихкод в Корзине или при помощи Google Pay</string>
+
+    <string name="cart_total_cost">Всего к оплате</string>
+    <string name="place_order">Оформить заказ</string>
+
+    <string name="product_unit_pieces_standard_quantity">1 шт.</string>
+    <string name="product_unit_kg_standard_quantity">1 кг.</string>
+    <string name="product_unit_gram_100_standard_quantity">100 г.</string>
+    <string name="product_unit_liters_standard_quantity">1 л.</string>
+
+    <string name="product_unit_pieces">шт.</string>
+    <string name="product_unit_kg">кг.</string>
+    <string name="product_unit_gram_100">г.</string>
+    <string name="product_unit_liters">л.</string>
+
+    <string name="product_quantity_in_cart">Сейчас в корзине: %s</string>
+    <string name="get_data_unsuccessful">Ошибка: данные не получены.</string>
+
+    <array name="months">
+        <item>января</item>
+        <item>февраля</item>
+        <item>марта</item>
+        <item>апреля</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>августа</item>
+        <item>сентября</item>
+        <item>октября</item>
+        <item>ноября</item>
+        <item>декабря</item>
+    </array>
+
+    <string name="scanner_add_to_cart">В Корзину</string>
+    <string name="scanner_product_price">Цена: %s</string>
+    <string name="scanner_product_value">Кол-во: %s</string>
+    <string name="camera_permission_not_allowed_title">Камера недоступна!</string>
+    <string name="camera_permission_not_allowed_text">Камера нудоступна! Возможна камера отключена или отсутсвует.</string>
+    <string name="camera_permission_title">Разрешение на доступ к Камере</string>
+    <string name="camera_permission_explanation_text">Разрешение на доступ к Камере необходимо для работы данного функционала.</string>
+    <string name="camera_permission_rejected_text">Разрешение на Камеру необходимо для работы данного функционала.</string>
+    <string name="camera_permission_rejected_with_not_ask_again">Разрешение отклонено и больше не появится… Теперь необходимо давать разрешение в Настройках приложения.</string>
+
+    <string name="default_permission_on_change_mind_text">Я передумал</string>
+    <string name="default_permission_go_to_settings">Настройки</string>
+    <string name="default_permission_title">Разрешение</string>
+    <string name="default_permission_explanation_text">Данное разрешение нужно для работы функционала</string>
+    <string name="default_permission_rejected_text">Разрешение отклонено, некоторый функционал не будет работать</string>
+    <string name="default_permission_rejected_with_not_ask_again">Разрешение отклонено. Теперь необходимо перейти в Настройки и разрешить вручную</string>
+
+    <string name="catalog_products_list_filter_im_lucky">Мне повезет</string>
+    <string name="catalog_products_list_filter_price_descent">Убывание стоимости</string>
+    <string name="catalog_products_list_filter_price_ascent">Возрастание стоимости</string>
+    <string name="catalog_products_list_filter_name_descent">Я-А название</string>
+    <string name="catalog_products_list_filter_name_ascent">А-Я название</string>
+    <string name="catalog_products_list_filter_discount_descent">Убывание скидки</string>
+    <string name="catalog_products_list_filter_discount_ascent">Возрастание скидки</string>
+
+    <string name="category_bakery_title">Выпечка</string>
+    <string name="category_milky_products_title">Молочные продукты</string>
+    <string name="category_sausages_title">Сосиски</string>
+    <string name="category_meat_title">Мясо</string>
+    <string name="category_fish_title">Рыба</string>
+    <string name="category_frozen_food_title">Замороженные продукты</string>
+    <string name="category_fruits_and_vegetables_title">Фрукты и овощи</string>
+    <string name="category_sweets_title">Сладкое</string>
+    <string name="category_snacks_title">Закуски</string>
+    <string name="category_tea_and_coffee_title">Чай и кофе</string>
+    <string name="category_drinks_title">Напитки</string>
+    <string name="category_alcohol_title">Алкоголь</string>
+    <string name="category_other_title">Другое</string>
+    <string name="category_all_title">Все</string>
+    <string name="category_default_title">Нет данных</string>
+
+    <string name="home_screen_promotion_title">Акции</string>
+    <string name="home_screen_promotion_button_title">ПОКАЗАТЬ ЕЩЕ</string>
+    <string name="home_screen_promotions_breed_title">Хлеб</string>
+    <string name="home_screen_promotions_breed_description">Скидки на все хлебобулочные изделия, после 20:00</string>
+    <string name="home_screen_promotions_hot_prices_title">Горячё!!!</string>
+    <string name="home_screen_promotions_hot_prices_description">Горячие скдки на все мясные изделия!!!</string>
+    <string name="home_screen_promotions_discount_title">Скидка</string>
+    <string name="home_screen_promotions_discount_description">Скидки на все сезонные овощи и фрукты - 25%</string>
+    <string name="home_screen_loyalty_card_section_title">Карты</string>
+    <string name="home_screen_loyalty_card_title">Карта лояльности</string>
+    <string name="home_screen_loyalty_card_description">Ваша карта лояльности в сети магазинов NYL.</string>
+    <string name="home_screen_gift_card_title">Подарочная карта</string>
+    <string name="home_screen_gift_card_description">Подарочная карта на сумму 1500р.</string>
+    <string name="home_screen_news_section_title">Новости</string>
+    <string name="home_screen_news_new_shop_title">Новые магазины</string>
+    <string name="home_screen_news_new_shop_description">Новый магазин открылся по адресу - пр. Гагарина 35 (ТРЦ "Океанис")</string>
+    <string name="home_screen_news_new_job_title">Карьера</string>
+    <string name="home_screen_news_new_job_description">В сети магазинов NYL открыта вакансия на позицию - Деректор магазина.</string>
+
+    <string name="maps_permission_tittle">Разрешение на доступ к геолокации</string>
+    <string name="maps_permission_explanation_text">Разрешение на доступ к геолокации необходимо для работы данного функционала.</string>
+    <string name="maps_permission_rejected_text">Разрешение на геолокации необходимо для работы данного функционала.</string>
+    <string name="maps_permission_rejected_with_not_ask_again">Разрешение отклонено и больше не появится… Теперь необходимо давать разрешение в Настройках приложения.</string>
+    <string name="profile_edit_apply_changes_btn_text">Сохранить</string>
+    <string name="profile_edit_cancel_changes_btn_text">Отмена</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="store_address">Адрес</string>
+    <string name="store_schedule">График работы</string>
+    <string name="product_add_to_cart_btn_text">В корзину</string>
+    <string name="product_unity_format">за %s</string>
+
+    <string name="auth_start_title">Аутентификация</string>
+    <string name="auth_sign_up_title">Регистрация</string>
+    <string name="auth_sign_in_title">Авторизация</string>
+    <string name="auth_restore_password_title">Восстановление пароля</string>
+    <string name="cart_title">Корзина</string>
+    <string name="profile_title">Профиль</string>
+    <string name="profile_edit_title">Редактирование профиля</string>
+
+    <string name="profile_edit_btn_text">Редактировать</string>
+    <string name="profile_help_btn_text">Задать вопрос</string>
+    <string name="profile_about_app_btn_text">О приложении</string>
+    <string name="profile_about_us_btn_text">О нашей сети</string>
+    <string name="profile_help_title">Задать вопрос</string>
+    <string name="profile_help_description">Вы можете задать вопрос, позвонив на нашу круглосуточную горячую линию:\n8 800 000 00 00</string>
+    <string name="profile_about_us_title">О нашей сети</string>
+    <string name="profile_about_app_title">О приложении</string>
+    <string name="profile_about_us_description">Наша сеть супермаркетов предлагает Вам натуральные, полезные, по-настоящему вкусные продукты и качественные напитки.</string>
+    <string name="profile_about_app_description">Приложение разработали энтузиасты Николай Кусков и Леонид Пюро.</string>
+    <string name="cart_confirm_clear_title">Очистить корзину?</string>
+    <string name="cart_confirm_clear_positive_btn_text">Да</string>
+    <string name="cart_confirm_clear_negative_btn_text">Отмена</string>
+    <string name="start_auth_sign_in_btn_text">Войти</string>
+    <string name="start_auth_sign_up_btn_text">Зарегистрироваться</string>
+    <string name="start_auth_supermarkets">Сеть супермаркетов</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/im_lucky"
+        android:title="@string/catalog_products_list_filter_im_lucky" />
+    <item android:id="@+id/name_ascent"
+        android:title="@string/catalog_products_list_filter_name_ascent" />
+</menu>
